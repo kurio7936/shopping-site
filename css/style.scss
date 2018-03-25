@@ -231,17 +231,26 @@ header{
    background: #9d1a2d;
 } 
 
-#new_item, #popular_item, #shopping_guide_title{
+#new_item, #popular_item, #shopping_guide_title, #recent_item{
   display: block;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
-  
-  @media(max-width: 550px){
+}
+
+@media(max-width: 550px){
+  #new_item, #popular_item, #shopping_guide_title{
   margin-top: 15px;
   margin-bottom: 15px;
   padding-right: 0px;
   width: 190px;
+  }
+  
+  #recent_item{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-right: 0px;
+  width: 150px;    
   }
 }
 
@@ -249,8 +258,24 @@ header{
   #new_item{
     width:95px;
   }
+
+  #popular_item{
+    width: 135px;
+    
+    img{
+      margin-top: 0;
+    }
+  }
   
-  #popular_item, #shopping_guide_title{
+  #recent_item{
+    width: 90px;
+    
+    img{
+      margin-top: 0;
+    }
+  }
+  
+  #shopping_guide_title{
     width: 135px;
     
     img{
@@ -406,7 +431,7 @@ header{
   
   #next{
     position: absolute;
-    right: 5px;
+    right: 10px;
     bottom: 22px;
   }
 }
@@ -426,7 +451,7 @@ header{
 
   #down{
     position: absolute;
-    right: 5px;
+    right: 10px;
     bottom: 22px;
   }
 }
@@ -444,7 +469,7 @@ header{
   
     #next{
     position: absolute;
-    right: 5px;
+    right: 10px;
     bottom: 22px;
   }
 }
@@ -531,6 +556,7 @@ footer{
   display: block;
   margin-left: auto;
   margin-top: 20px;
+  padding-right: 10px;
 }
 
 hr {
@@ -553,6 +579,8 @@ hr {
 .copyright{
   color: $brown;
   text-align: center;
+  margin-bottom: 30px;
+  @include fontsize(10)
 }
 
 /* end of top */

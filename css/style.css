@@ -126,25 +126,41 @@ header .sp_navi_li {
 .cover-image .owl-theme .owl-dots .owl-dot:hover span {
   background: #9d1a2d; }
 
-#new_item, #popular_item, #shopping_guide_title {
+#new_item, #popular_item, #shopping_guide_title, #recent_item {
   display: block;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px; }
-  @media (max-width: 550px) {
-    #new_item, #popular_item, #shopping_guide_title {
-      margin-top: 15px;
-      margin-bottom: 15px;
-      padding-right: 0px;
-      width: 190px; } }
 
+@media (max-width: 550px) {
+  #new_item, #popular_item, #shopping_guide_title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 0px;
+    width: 190px; }
+
+  #recent_item {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 0px;
+    width: 150px; } }
 @media (min-width: 551px) {
   #new_item {
     width: 95px; }
 
-  #popular_item, #shopping_guide_title {
+  #popular_item {
     width: 135px; }
-    #popular_item img, #shopping_guide_title img {
+    #popular_item img {
+      margin-top: 0; }
+
+  #recent_item {
+    width: 90px; }
+    #recent_item img {
+      margin-top: 0; }
+
+  #shopping_guide_title {
+    width: 135px; }
+    #shopping_guide_title img {
       margin-top: 0; }
 
   .title_border {
@@ -266,7 +282,7 @@ header .sp_navi_li {
   position: relative; }
   .pagelink #next {
     position: absolute;
-    right: 5px;
+    right: 10px;
     bottom: 22px; }
 
 .categories {
@@ -282,7 +298,7 @@ header .sp_navi_li {
   position: relative; }
   .categories_top #down {
     position: absolute;
-    right: 5px;
+    right: 10px;
     bottom: 22px; }
 
 .categories_links p {
@@ -298,7 +314,7 @@ header .sp_navi_li {
   font-size: 1.3rem; }
   .categories_links p #next {
     position: absolute;
-    right: 5px;
+    right: 10px;
     bottom: 22px; }
 
 .about, .shopinfo {
@@ -359,7 +375,8 @@ footer {
 #pagetop {
   display: block;
   margin-left: auto;
-  margin-top: 20px; }
+  margin-top: 20px;
+  padding-right: 10px; }
 
 hr {
   border-width: 1px 0px 0px 0px;
@@ -383,7 +400,10 @@ hr {
 
 .copyright {
   color: #887f69;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 10px;
+  font-size: 1rem; }
 
 /* end of top */
 .product_dtl {
